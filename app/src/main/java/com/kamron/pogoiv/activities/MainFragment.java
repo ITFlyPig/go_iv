@@ -53,15 +53,6 @@ public class MainFragment extends Fragment {
     @BindView(R.id.teamPickerSpinner)
     Spinner teamPickerSpinner;
 
-    @BindView(R.id.versionNumber)
-    TextView versionNumber;
-
-    @BindView(R.id.githubButton)
-    ImageButton githubButton;
-
-    @BindView(R.id.redditButton)
-    ImageButton redditButton;
-
     @BindView(R.id.helpButton)
     Button helpButton;
 
@@ -141,7 +132,6 @@ public class MainFragment extends Fragment {
      * Initiates all the gui components.
      */
     private void initiateGui() {
-        versionNumber.setText(String.format("v%s", getVersionName()));
         initiateLevelPicker();
         initiateTeamPickerSpinner();
         initiateHelpButton();
@@ -174,21 +164,7 @@ public class MainFragment extends Fragment {
      * Initiates the links to reddit and github.
      */
     private void initiateCommunityButtons() {
-        redditButton.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                Uri uriUrl = Uri.parse("https://www.reddit.com/r/GoIV/");
-                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
-                startActivity(launchBrowser);
-            }
-        });
 
-        githubButton.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                Uri uriUrl = Uri.parse("https://github.com/farkam135/GoIV");
-                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
-                startActivity(launchBrowser);
-            }
-        });
     }
 
     private void initiateHelpButton() {
