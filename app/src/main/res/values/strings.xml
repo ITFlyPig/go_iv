@@ -322,4 +322,9 @@
     <string name="manual_calibration_save_exit">"Save \n&amp; exit"</string>
     <string name="fast_copy_to_clipboard">fastCopyToClipboard</string>
     <string name="copy_to_clip_fast">Copy to clipboard on preview</string>
+    <string name="main_tip">Setup Instructions\n
+Starting IV GO Calc for the first time: \n
+2.Enter your trainer info.\n
+3.Press the GRANT PERMISSION button and accept all prompts. \n
+4.Press start.</string>
 </resources>

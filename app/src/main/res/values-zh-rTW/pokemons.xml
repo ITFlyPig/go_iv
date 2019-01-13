@@ -499,4 +499,19 @@
         <item>美錄坦</item>
         <item>美錄梅塔</item>
     </string-array>
+
+    <string name="trainer_level">訓練師等級</string>
+    <string name="trainer_info">訓練師信息</string>
+    <string name="trainer_team">隊伍</string>
+    <string-array name="teams">
+        <item name="mystic">"神秘團隊"</item>
+        <item name="valor">"英勇團隊"</item>
+        <item name="instinct">"天才團隊"</item>
+    </string-array>
+    <string name="main_start">開始</string>
+    <string name="main_tip">使用說明\n
+1.啟動IV GO Calc app.\n
+2.設置訓練師等級並選擇隊伍.\n
+3.授予權限. \n
+4.按下開始.</string>
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="trainer_info">訓練師信息</string>
+    <string name="trainer_level">トレーナーレベル</string>
+    <string name="trainer_team">チーム</string>
+    <string-array name="teams">
+        <item name="mystic">"ミスティック"</item>
+        <item name="valor">"ヴァーラー"</item>
+        <item name="instinct">"インスティンクト"</item>
+    </string-array>
+    <string name="main_start">スタート</string>
+    <string name="main_tip">インストラクション\n
+1.啟動IV GO Calc app.\n
+2.設置訓練師等級並選擇隊伍.\n
+3.許可を承認します. \n
+4.開始を押し.</string>
+</resources>

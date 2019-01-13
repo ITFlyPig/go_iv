@@ -118,12 +118,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:visibility="gone"
             android:text="@string/instructions_title"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:visibility="gone"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
@@ -154,6 +156,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="12dp"
+            android:visibility="gone"
             android:text="@string/goiv_is_open_source"/>
 
         <TextView
@@ -162,7 +165,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="4dp"
+            android:visibility="gone"
             tools:text="v0.0.0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/main_tip"/>
 
     </LinearLayout>
 

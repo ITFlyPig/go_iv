@@ -51,4 +51,8 @@ public class AppUpdate implements Parcelable {
             return new AppUpdate[size];
         }
     };
+
+    public int getStatus() {
+        return status;
+    }
 }
