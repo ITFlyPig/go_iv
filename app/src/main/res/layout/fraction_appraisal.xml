@@ -1,0 +1,315 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:minHeight="@dimen/dialog_small_height_min">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:baselineAligned="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            style="?attr/borderlessButtonStyle"
+            android:id="@+id/positionHandler"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_compare_arrows_white_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/additionalRefiningHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/appraisal_refining"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <ImageButton
+            style="?attr/borderlessButtonStyle"
+            android:id="@+id/btnClose"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:text="@string/close"
+            android:src="@drawable/ic_clear_white_24dp"
+            android:contentDescription="@string/close" />
+
+    </LinearLayout>
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        app:sc_corner_radius="0dp"
+        app:sc_tint_color="@color/colorPrimary">
+
+        <RadioButton
+            android:id="@+id/statsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/token_category_basic_stats"
+            android:textAllCaps="true"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/appraisalButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/appraisal"
+            android:textAllCaps="true"
+            android:checked="true"
+            style="@style/RadioButton" />
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/appraisalIVRangeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp">
+
+        <RadioButton
+            style="?android:attr/checkboxStyle"
+            android:id="@+id/appraisalIVRange4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/mv4" />
+
+        <RadioButton
+            style="?android:attr/checkboxStyle"
+            android:id="@+id/appraisalIVRange3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/mv3" />
+
+        <RadioButton
+            style="?android:attr/checkboxStyle"
+            android:id="@+id/appraisalIVRange2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/mv2" />
+
+        <RadioButton
+            style="?android:attr/checkboxStyle"
+            android:id="@+id/appraisalIVRange1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/mv1" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/attDefStaLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp">
+
+        <CheckBox
+            android:id="@+id/attCheckbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/attack" />
+
+        <CheckBox
+            android:id="@+id/defCheckbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/defense" />
+
+        <CheckBox
+            android:id="@+id/staCheckbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/stamina_hp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/appraisalStatsGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp">
+
+        <RadioButton
+            style="?android:attr/checkboxStyle"
+            android:id="@+id/appraisalStat4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/ms4" />
+
+        <RadioButton
+            style="?android:attr/checkboxStyle"
+            android:id="@+id/appraisalStat3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/ms3" />
+
+        <RadioButton
+            style="?android:attr/checkboxStyle"
+            android:id="@+id/appraisalStat2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/ms2" />
+
+        <RadioButton
+            style="?android:attr/checkboxStyle"
+            android:id="@+id/appraisalStat1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textScaleX=".85"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:text="@string/ms1" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4dp"
+        android:baselineAligned="true">
+
+        <Switch
+            android:id="@+id/eggRaidSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/eggRaidText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/eggRaidSwitch"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorPrimaryDisableOnly"
+            android:text="@string/acquired_from_egg_or_raid" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnBackAppr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/btnCheckIv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/check_iv" />
+
+    </LinearLayout>
+
+</LinearLayout>
