@@ -36,6 +36,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.LayoutInflater;
@@ -384,6 +385,7 @@ public class MainActivity extends AppCompatActivity {
         LocalBroadcastManager.getInstance(this).registerReceiver(showUpdateDialog,
                 new IntentFilter(ACTION_SHOW_UPDATE_DIALOG));
         MobclickAgent.onResume(this);
+        Log.d("wyl", "onResume 开始友盟统计");
     }
 
     @Override

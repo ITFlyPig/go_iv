@@ -108,25 +108,7 @@ android {
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "offline"]
         }
 
-        online {
-            applicationId "com.swanberg.pogoiv"
-            buildConfigField "boolean", "INTERNET_AVAILABLE", "true"
-            buildConfigField "boolean", "DISTRIBUTION_GITHUB", "true"
-            buildConfigField "boolean", "DISTRIBUTION_PLAYSTORE", "false"
-            ext.enableCrashlytics = true
-            dimension "default"
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "online"]
-        }
 
-        playstore {
-            applicationId = "org.opensource.goiv"
-            buildConfigField "boolean", "INTERNET_AVAILABLE", "true"
-            buildConfigField "boolean", "DISTRIBUTION_GITHUB", "false"
-            buildConfigField "boolean", "DISTRIBUTION_PLAYSTORE", "true"
-            ext.enableCrashlytics = true
-            dimension "default"
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "playstore"]
-        }
     }
 
     /**
@@ -136,8 +118,10 @@ android {
      */
     buildTypes {
         debug {
-            applicationIdSuffix ".debug"
-            ext.enableCrashlytics = false
+//            applicationIdSuffix ".debug"
+//            ext.enableCrashlytics = false
+            minifyEnabled false
+            productFlavors.offline.signingConfig signingConfigs.releaseConfig
         }
         release {
             minifyEnabled true

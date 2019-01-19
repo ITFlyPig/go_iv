@@ -2,6 +2,7 @@ package com.pokemongo.ivgocalculator;
 
 import android.app.Application;
 import android.support.v7.app.AppCompatDelegate;
+import android.util.Log;
 
 import com.pokemongo.ivgocalculator.pokeflycomponents.MovesetsManager;
 import com.pokemongo.ivgocalculator.utils.CrashlyticsWrapper;
@@ -30,6 +31,7 @@ public class PoGoApplication extends Application {
 
         MovesetsManager.init(this);
 
+        Log.d("wyl", "PoGoApplication 开始初始化友盟统计");
         MobclickAgent.startWithConfigure(new MobclickAgent.UMAnalyticsConfig(this, getString(R.string.umeng_key), "release", MobclickAgent.EScenarioType.E_UM_NORMAL, true));
     }
 }
