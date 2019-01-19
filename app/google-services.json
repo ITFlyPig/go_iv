@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "309471323220",
+    "firebase_url": "https://my-app-175d6.firebaseio.com",
+    "project_id": "my-app-175d6",
+    "storage_bucket": "my-app-175d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309471323220:android:565247c816977ef8",
+        "android_client_info": {
+          "package_name": "com.pokemongo.ivgocalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309471323220-uav3m7m1a316qsiq5h4elpt7r7mi1qvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHP7SGvyAoxm095BukhdUoiJ7xKwnApIs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

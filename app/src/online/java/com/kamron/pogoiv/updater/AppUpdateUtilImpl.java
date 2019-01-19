@@ -1,4 +1,4 @@
-package com.kamron.pogoiv.updater;
+package com.pokemongo.ivgocalculator.updater;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,9 +6,9 @@ import android.support.annotation.NonNull;
 import android.support.v4.content.LocalBroadcastManager;
 import android.widget.Toast;
 
-import com.kamron.pogoiv.BuildConfig;
-import com.kamron.pogoiv.R;
-import com.kamron.pogoiv.activities.MainActivity;
+import com.pokemongo.ivgocalculator.BuildConfig;
+import com.pokemongo.ivgocalculator.R;
+import com.pokemongo.ivgocalculator.activities.MainActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -1,0 +1,78 @@
+package com.pokemongo.ivgocalculator.pokeflycomponents.fractions;
+
+
+import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
+import android.view.View;
+
+import com.pokemongo.ivgocalculator.Pokefly;
+import com.pokemongo.ivgocalculator.R;
+import com.pokemongo.ivgocalculator.utils.fractions.Fraction;
+import com.pokemongo.ivgocalculator.widgets.recyclerviews.adapters.IVResultsAdapter;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+
+public class IVCombinationsFraction extends Fraction {
+
+    @BindView(R.id.rvResults)
+    RecyclerView rvResults;
+
+
+    private Context context;
+    private Pokefly pokefly;
+
+
+    public IVCombinationsFraction(@NonNull Pokefly pokefly) {
+        this.context = pokefly;
+        this.pokefly = pokefly;
+    }
+
+
+    @Override
+    public int getLayoutResId() {
+        return R.layout.fraction_iv_combinations;
+    }
+
+    @Override public void onCreate(@NonNull View rootView) {
+        ButterKnife.bind(this, rootView);
+
+        // All IV combinations RecyclerView
+        LinearLayoutManager layoutManager = new LinearLayoutManager(context);
+        rvResults.setLayoutManager(layoutManager);
+        rvResults.setHasFixedSize(true);
+        Pokefly.scanResult.sortIVCombinations();
+        rvResults.setAdapter(new IVResultsAdapter(Pokefly.scanResult, pokefly));
+    }
+
+    @Override public void onDestroy() {
+        // Nothing to do
+    }
+
+    @Override
+    public Anchor getAnchor() {
+        return Anchor.BOTTOM;
+    }
+
+    @Override
+    public int getVerticalOffset(@NonNull DisplayMetrics displayMetrics) {
+        return 0;
+    }
+
+    @OnClick(R.id.btnBack)
+    void onBack() {
+        pokefly.navigateToIVResultFraction();
+    }
+
+    @OnClick(R.id.btnClose)
+    void onClose() {
+        pokefly.closeInfoDialog();
+    }
+
+}
+

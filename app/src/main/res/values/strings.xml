@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="instructions_title">Setup Instructions</string>
-    <string name="instructions_message">Starting GoIV for the first time:\n\nEnter your trainer info.\n\nPress the GRANT PERMISSION button and accept all prompts.\n\nPress start.</string>
-    <string name="goiv_is_open_source">GoIV is open source!</string>
+    <string name="instructions_message">Starting IV GO Calc for the first time:\n\nEnter your trainer info.\n\nPress the GRANT PERMISSION button and accept all prompts.\n\nPress start.</string>
+    <string name="goiv_is_open_source">IV GO Calc is open source!</string>
     <string name="trainer_info">Trainer Info</string>
     <string name="trainer_level">Level</string>
     <string name="trainer_team">Team</string>
@@ -23,11 +23,11 @@
     <string name="use_the_slider_below_to_align_the_arc">Use the slider below to align the arc:</string>
     <string name="cancel">Cancel</string>
     <string name="check_iv">Check IV</string>
-    <string name="notification_title">GoIV Running - Level %1$d</string>
-    <string name="notification_title_short">GoIV - Lvl %1$d</string>
-    <string name="notification_title_goiv_stopped">GoIV stopped</string>
-    <string name="notification_title_tap_to_open">Tap to open GoIV.</string>
-    <string name="notification_channel">GoIV status</string>
+    <string name="notification_title">IV GO Calc Running - Level %1$d</string>
+    <string name="notification_title_short">IV GO Calc - Lvl %1$d</string>
+    <string name="notification_title_goiv_stopped">IV GO Calc stopped</string>
+    <string name="notification_title_tap_to_open">Tap to open IV GO Calc.</string>
+    <string name="notification_channel">IV GO Calc status</string>
     <string name="close">Close</string>
     <string name="main_permission">Grant Permissions</string>
     <string name="main_start">Start</string>
@@ -37,21 +37,21 @@
     <string name="accept_screen_capture">Accept screen capture</string>
     <string name="settings_page_title">Settings</string>
     <string name="launch_pokemon_go_setting_title">Auto launch the game</string>
-    <string name="launch_pokemon_go_setting_summary">Launch the game when GoIV is started</string>
+    <string name="launch_pokemon_go_setting_summary">Launch the game when IV GO Calc is started</string>
     <string name="confirmation_dialog_setting_title">Enable scan correction dialog</string>
     <string name="confirmation_dialog_setting_summary">Show a screen which allows you to manually edit the scanned information before showing results</string>
     <string name="manual_screenshot_mode_setting_title">Screenshot mode</string>
-    <string name="manual_screenshot_mode_setting_summary">Save battery life by scanning screenshots instead of auto detecting. This setting has to be enabled for Android KitKat and below. Warning! In this mode the GoIV button does not auto appear</string>
+    <string name="manual_screenshot_mode_setting_summary">Save battery life by scanning screenshots instead of auto detecting. This setting has to be enabled for Android KitKat and below. Warning! In this mode the IV GO Calc button does not auto appear</string>
     <string name="delete_screenshots_setting_title">Delete screenshots</string>
-    <string name="delete_screenshots_setting_summary">Automatically delete screenshots taken by GoIV</string>
+    <string name="delete_screenshots_setting_summary">Automatically delete screenshots taken by IV GO Calc</string>
     <string name="copy_to_clipboard_setting_title">Copy smart nickname to clipboard</string>
     <string name="copy_to_clipboard_setting_summary_new" formatted="false">Add information to your copy &amp; paste clipboard on full pokemon scan (Press the button).</string>
     <string name="send_crash_reports_setting_title">Send crash reports</string>
     <string name="send_crash_reports_setting_summary">Help the developers improve the application by sending anonymous crash-related information to them and completely anonymous usage stats</string>
     <string name="auto_update_setting_title">Auto-update</string>
     <string name="auto_update_setting_summary">Automatically check for updates when the app is being used</string>
-    <string name="check_for_update_setting_title">Check for update now</string>
-    <string name="check_for_update_setting_summary">See if an update is available</string>
+    <string name="check_for_update_setting_title">App\'s Privacy Policy</string>
+    <string name="check_for_update_setting_summary">Click here to view</string>
     <string name="scan_pokemon_failed">Scanning failed, please scroll up and try again!</string>
     <string name="see_all">See All</string>
     <string name="powerup_calc_instructions">Power up and evolution calculation\nDrag the level slider to view different predictions</string>
@@ -60,7 +60,7 @@
     <string name="level_acronym">LVL</string>
     <string name="level_num">Level %1$s</string>
     <string name="possible_iv_combinations" tools:ignore="PluralsCandidate">"%1$d possible IV combinations"</string>
-    <string name="check_cp_or_level">Something went wrong! Please check that the input values were correct, and that GoIV has the right trainer level in the launch screen.</string>
+    <string name="check_cp_or_level">Something went wrong! Please check that the input values were correct, and that IV GO Calc has the right trainer level in the launch screen.</string>
     <string name="appraisal">Appraisal</string>
     <string name="appraisal_refining">Additional Refining</string>
     <string name="attack">Attack</string>
@@ -70,7 +70,7 @@
     <string name="update_check_failed">An error occurred while checking for an update. Please check your internet connection</string>
     <string name="up_to_date">Your app is up-to-date</string>
     <string name="checking_for_update">Checking for update…</string>
-    <string name="ongoing_update">An update for GoIV is already being downloaded</string>
+    <string name="ongoing_update">An update for IV GO Calc is already being downloaded</string>
     <string name="iv_perfect" formatted="false">% Perfect</string>
     <string name="wrong_pokemon_name_input">" was not found."</string>
     <string name="min">MIN</string>
@@ -104,7 +104,7 @@
     <string name="expanded_appraisal_default_setting_title">Expanded appraisal opened by default</string>
     <string name="expanded_appraisal_default_setting_summary">Automatically expand the full appraisal checkbox menu</string>
     <string name="showtranslatedpokemonname_setting_title">Show translated monster name</string>
-    <string name="showtranslatedpokemonname_setting_summary">Display translated monster name on GoIV but use its English name for OCR. This is for when the game app is in English but user\'s native language is not</string>
+    <string name="showtranslatedpokemonname_setting_summary">Display translated monster name on IV GO Calc but use its English name for OCR. This is for when the game app is in English but user\'s native language is not</string>
     <string name="pause_goiv_notification">Pause</string>
     <string name="clipboard_copy_toast">Copied %s to clipboard</string>
     <string name="no_clipboard_preview">No preview available</string>
@@ -119,7 +119,7 @@
     <string name="view_credits_button">viewCredits</string>
     <string name="copy_to_clipboard_setting_key" translatable="false">copyToClipboard</string>
     <string name="manual_screenshot_mode_key" translatable="false">manualScreenshotMode</string>
-    <string name="android_sub5_warning">GoIV has detected that your phone does not have the MediaProjection API, which is used to automatically show the IV scan button. This might be fixed by updating your phone to Android 5 or above. The app will lock itself to screenshot mode to avoid crashing. You can use GoIV by manually triggering a screenshot, which most devices does by holding home+power for a short duration. We apologize for the inconvenience.</string>
+    <string name="android_sub5_warning">IV GO Calc has detected that your phone does not have the MediaProjection API, which is used to automatically show the IV scan button. This might be fixed by updating your phone to Android 5 or above. The app will lock itself to screenshot mode to avoid crashing. You can use IV GO Calc by manually triggering a screenshot, which most devices does by holding home+power for a short duration. We apologize for the inconvenience.</string>
     <string name="copy_to_clip_show_toast_setting_summary">Show a preview of what is copied to the clipboard in a small popup</string>
     <string name="copy_to_clip_show_toast_setting">Show clipboard preview popup</string>
     <string name="autoAppraisalScanDelay_title">Auto appraisal delay</string>
@@ -129,8 +129,8 @@
     <string name="quick_iv_preview_clipboard_title">Also preview clipboard</string>
     <string name="quick_iv_preview_clipboard_summary">On a quick iv scan, also show a small popup previewing the smart-clipboard</string>
     <string name="settings_title_behaviour">App behaviour preferences</string>
-    <string name="settings_title_optional">Optional GoIV features</string>
-    <string name="settings_title_mode">GoIV mode</string>
+    <string name="settings_title_optional">Optional IV GO Calc features</string>
+    <string name="settings_title_mode">IV GO Calc mode</string>
     <string name="settings_title_uninteresting">Uninteresting settings</string>
 
     <!-- Team mystic appraisal strings mv for iv % and ms for strongest stat range-->
@@ -169,11 +169,11 @@
     <string name="recalibrate_goiv_notification">Recalibrate</string>
     <string name="title_activity_ocr_calibration_result">Calibration Result</string>
     <string name="title_activity_ocr_calibration_error">Calibration Error</string>
-    <string name="recalibration_description">Recalibration enhances GoIV\'s performance by dynamically finding optimal scan locations for your phone.</string>
+    <string name="recalibration_description">Recalibration enhances IV GO Calc\'s performance by dynamically finding optimal scan locations for your phone.</string>
     <string name="scan_optimization_notice_text">You have not run scan calibration. It\'s recommended to run this optimization on all devices.</string>
-    <string name="scan_optimization_screen_ratio_warning">GoIV has detected that your screen is not standard. You\'ll most likely need to perform screen calibration for GoIV to work.</string>
+    <string name="scan_optimization_screen_ratio_warning">IV GO Calc has detected that your screen is not standard. You\'ll most likely need to perform screen calibration for IV GO Calc to work.</string>
     <string name="scan_optimization_outdated_warning">Your calibration data is outdated. Please run screen calibration again to enjoy the latest features!</string>
-    <string name="email_report_require_permission">"GoIV needs to access external storage to share the calibration screenshot with your email client app."</string>
+    <string name="email_report_require_permission">"IV GO Calc needs to access external storage to share the calibration screenshot with your email client app."</string>
     <string name="discard_unsaved_changes">There are unsaved changes.\nDo you really want to discard them?</string>
     <string name="configuration_saved">Configuration saved!</string>
     <string name="configuration_saved_feature_disabled">Configuration saved!\nPlease enable \"%1$s\" feature in setting to activate the new configuration!</string>
@@ -188,8 +188,8 @@
     <string name="token_max_length">Max length:</string>
     <string name="clipboard_token_list_available">Full list of available token types</string>
     <string name="clipboard_token_description_title">Selected token description</string>
-    <string name="button_recalibrate">"Calibrate GoIV"</string>
-    <string name="ocr_calibration_screenshot_mode">"The next screenshot taken will be used to recalibrate GoIV!"</string>
+    <string name="button_recalibrate">"Calibrate IV GO Calc"</string>
+    <string name="ocr_calibration_screenshot_mode">"The next screenshot taken will be used to recalibrate IV GO Calc!"</string>
     <string name="ocr_calibration_result_description">This is the result of the automatic calibration, each field of interest that was detected has been marked.</string>
     <string name="ocr_calibration_save">Save calibration</string>
     <string name="ocr_calibration_check_before">Before saving, check the result correctness in the screenshot below:</string>
@@ -213,7 +213,7 @@
     <string name="ocr_error_locate_pixel_green">Unable to locate green marker pixel\n</string>
     <string name="ocr_error_pick_pixel_green">Unable to pick green marker pixel color\n</string>
     <string name="ocr_msg_verify">\nATTENTION! Please verify that:\n① The info screen is scrolled all the way up\n② The 3D model doesn\'t cover any important information\n③ Is not a final evolution! I suggest a Pidgey!\n④ Is not lucky</string>
-    <string name="ocr_calibration_saved">Calibration saved!\nRestart GoIV to apply the changes!</string>
+    <string name="ocr_calibration_saved">Calibration saved!\nRestart IV GO Calc to apply the changes!</string>
     <string name="ocr_finding_name">Finding name area</string>
     <string name="ocr_finding_type">Finding type area</string>
     <string name="ocr_finding_gender">Finding gender area</string>
@@ -283,9 +283,9 @@
     <string name="token_msg_worthTra_msg">"This token returns an evaluation of how worth it is to train this monster, based both on the base stats and the %1$s possible IV stats. For instance, a 96%% IV Alakazam will get a score higher than a 20%% Tyranitar, regardless the fact that the maximum possible CP for the latter is higher: since the probability of getting better Tyranitar is higher than the one of getting better Alakazams, the second represents a much better stardust investment. Ranges in 00–99. Always returns two digits."</string>
     <string name="token_msg_train">Train %1$s</string>
     <string name="token_msg_iv_perc_to_top">"Get the difference in percentage between the maximum and the perfect IV combination. For example, if the max IV combination percentage is 97, this token will return 03."</string>
-    <string name="go_back_to_goiv">Go back to GoIV</string>
+    <string name="go_back_to_goiv">Go back to IV GO Calc</string>
     <string name="go_back">Go back</string>
-    <string name="send_email_to_devs_recalibration">If GoIV failed recalibrating when it should have worked, please press the button below to generate an automatic bug report email.</string>
+    <string name="send_email_to_devs_recalibration">If IV GO Calc failed recalibrating when it should have worked, please press the button below to generate an automatic bug report email.</string>
     <string name="send_email_to_devs_button">Email error information to developers</string>
     <string name="report_error">Email error report</string>
     <string name="recalibration_video_tutorial">Recalibration video tutorial</string>
@@ -327,4 +327,6 @@ Starting IV GO Calc for the first time: \n
 2.Enter your trainer info.\n
 3.Press the GRANT PERMISSION button and accept all prompts. \n
 4.Press start.</string>
+
+    <string name="umeng_key">5bfd2550f1f556797400018e</string>
 </resources>

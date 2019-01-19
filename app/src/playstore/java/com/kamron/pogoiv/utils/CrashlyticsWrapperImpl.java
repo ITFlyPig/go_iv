@@ -1,12 +1,12 @@
-package com.kamron.pogoiv.utils;
+package com.pokemongo.ivgocalculator.utils;
 
 import android.content.Context;
 import android.text.TextUtils;
 
 import com.crashlytics.android.Crashlytics;
 import com.crashlytics.android.core.CrashlyticsCore;
-import com.kamron.pogoiv.BuildConfig;
-import com.kamron.pogoiv.GoIVSettings;
+import com.pokemongo.ivgocalculator.BuildConfig;
+import com.pokemongo.ivgocalculator.GoIVSettings;
 
 import io.fabric.sdk.android.Fabric;
 import timber.log.Timber;

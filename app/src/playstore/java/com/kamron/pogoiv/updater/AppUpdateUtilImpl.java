@@ -1,4 +1,4 @@
-package com.kamron.pogoiv.updater;
+package com.pokemongo.ivgocalculator.updater;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kamron.pogoiv">
+    package="com.pokemongo.ivgocalculator">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
         android:name=".PoGoApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/adaptive_icon"
-        android:roundIcon="@mipmap/adaptive_icon_round"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -77,5 +77,16 @@
             android:noHistory="true"
             android:theme="@style/AppTheme.NoActionBar.fullscreen"/>
     </application>
+
+
+    <!--value的值填写你在友盟后台申请的应用Appkey-->
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="5bfd2550f1f556797400018e" />
+    <!--value的值填写渠道名称，例如yingyongbao。这里设置动态渠道名称变量-->
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="google" />
+
 
 </manifest>

@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:fitsSystemWindows="true"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:layout_behavior="com.kamron.pogoiv.widgets.behaviors.DisableableAppBarLayoutBehavior">
+            app:layout_behavior="com.pokemongo.ivgocalculator.widgets.behaviors.DisableableAppBarLayoutBehavior">
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapsingToolbarLayout"
