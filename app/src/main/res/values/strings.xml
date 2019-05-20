@@ -329,4 +329,6 @@ Starting IV GO Calc for the first time: \n
 4.Press start.</string>
 
     <string name="umeng_key">5bfd2550f1f556797400018e</string>
+
+    <string name="app_name">IV Go Calc</string>
 </resources>

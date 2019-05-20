@@ -34,9 +34,9 @@ public class SettingsActivity extends AppCompatActivity {
             }
             AppUpdate update = intent.getParcelableExtra("update");
             if (update.getStatus() == AppUpdate.UPDATE_AVAILABLE) {
-                AppUpdateUtil.getInstance()
-                        .getAppUpdateDialog(SettingsActivity.this, update)
-                        .show();
+//                AppUpdateUtil.getInstance()
+//                        .getAppUpdateDialog(SettingsActivity.this, update)
+//                        .show();
             } else if (update.getStatus() == AppUpdate.UP_TO_DATE) {
                 Toast.makeText(SettingsActivity.this, getResources().getString(R.string.up_to_date), Toast.LENGTH_SHORT)
                         .show();
@@ -100,7 +100,7 @@ public class SettingsActivity extends AppCompatActivity {
             checkForUpdatePreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
-                    AppUpdateUtil.getInstance().checkForUpdate(getActivity(), true);
+//                    AppUpdateUtil.getInstance().checkForUpdate(getActivity(), true);
                     return true;
                 }
             });

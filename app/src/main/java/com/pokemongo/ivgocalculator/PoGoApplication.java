@@ -13,14 +13,21 @@ import timber.log.Timber;
 
 public class PoGoApplication extends Application {
 
+    private static PoGoApplication application;
+
+    public static PoGoApplication getApplication() {
+        return application;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
+        application = this;
 
         if (BuildConfig.DEBUG) {
             Timber.plant(new Timber.DebugTree());
         } else {
-            CrashlyticsWrapper.getInstance().init(this);
+//            CrashlyticsWrapper.getInstance().init(this);
         }
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
@@ -32,6 +39,8 @@ public class PoGoApplication extends Application {
         MovesetsManager.init(this);
 
         Log.d("wyl", "PoGoApplication 开始初始化友盟统计");
+
         MobclickAgent.startWithConfigure(new MobclickAgent.UMAnalyticsConfig(this, getString(R.string.umeng_key), "release", MobclickAgent.EScenarioType.E_UM_NORMAL, true));
+        MobclickAgent.setDebugMode(true);
     }
 }

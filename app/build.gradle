@@ -144,12 +144,7 @@ android {
             include 'armeabi-v7a'/**, 'arm64-v8a', 'x86', 'x86_64'**/
         }
     }
-    sourceSets {
-        onlineRelease {
-            // Contains the io.fabric.ApiKey meta-data
-            manifest.srcFile 'src/onlineRelease/FabricManifest.xml'
-        }
-    }
+
 
     android.applicationVariants.all { variant ->
         variant.outputs.all {
@@ -194,16 +189,16 @@ dependencies {
     /**
      *   Online Build Dependencies
      */
-    onlineImplementation 'com.squareup.okhttp3:okhttp:3.10.0'
-    onlineImplementation('com.crashlytics.sdk.android:crashlytics:2.9.2@aar') {
-        transitive = true
-    }
+//    onlineImplementation 'com.squareup.okhttp3:okhttp:3.10.0'
+//    onlineImplementation('com.crashlytics.sdk.android:crashlytics:2.9.2@aar') {
+//        transitive = true
+//    }
     /**
      *   Play Store Build Dependencies
      */
-    playstoreImplementation('com.crashlytics.sdk.android:crashlytics:2.9.2@aar') {
-        transitive = true
-    }
+//    playstoreImplementation('com.crashlytics.sdk.android:crashlytics:2.9.2@aar') {
+//        transitive = true
+//    }
     /**
      *   Test Build Dependencies
      */
@@ -218,6 +213,12 @@ dependencies {
     //used to generate moveset list
     implementation files('libs/umeng-analytics-v6.1.1.jar')
     implementation files('libs/utdid4all-1.0.4.jar')
+
+    //谷歌内购
+    implementation 'com.android.billingclient:billing:1.0'
+    implementation 'com.google.android.gms:play-services:11.0.1'
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.0.0'
 }
 
 /**

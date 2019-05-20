@@ -20,13 +20,14 @@ import static android.content.Context.DOWNLOAD_SERVICE;
 
 public abstract class AppUpdateUtil {
 
-    private static AppUpdateUtilImpl instance;
+//    private static AppUpdateUtilImpl instance;
 
     public static synchronized AppUpdateUtil getInstance() {
-        if (instance == null) {
-            instance = new AppUpdateUtilImpl();
-        }
-        return instance;
+//        if (instance == null) {
+//            instance = new AppUpdateUtilImpl();
+//        }
+//        return instance;
+        return null;
     }
 
     public static boolean isGoIVBeingUpdated(@NonNull Context context) {

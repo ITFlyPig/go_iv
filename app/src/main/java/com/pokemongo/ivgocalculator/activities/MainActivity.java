@@ -115,9 +115,9 @@ public class MainActivity extends AppCompatActivity {
             AppUpdate update = intent.getParcelableExtra("update");
             if (update.getStatus() == AppUpdate.UPDATE_AVAILABLE
                     && !AppUpdateUtil.isGoIVBeingUpdated(context)) {
-                AppUpdateUtil.getInstance()
-                        .getAppUpdateDialog(MainActivity.this, update)
-                        .show();
+//                AppUpdateUtil.getInstance()
+//                        .getAppUpdateDialog(MainActivity.this, update)
+//                        .show();
             }
         }
     };
@@ -279,7 +279,7 @@ public class MainActivity extends AppCompatActivity {
     private void runAutoUpdateStartupChecks() {
         AppUpdateUtil.deletePreviousApkFile(MainActivity.this);
         if (GoIVSettings.getInstance(this).isAutoUpdateEnabled()) {
-            AppUpdateUtil.getInstance().checkForUpdate(this, false);
+//            AppUpdateUtil.getInstance().checkForUpdate(this, false);
         }
     }
 
