@@ -7,6 +7,7 @@ import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
+import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -39,13 +40,16 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Display;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 import com.pokemongo.ivgocalculator.GoIVSettings;
 import com.pokemongo.ivgocalculator.Pokefly;
@@ -53,8 +57,12 @@ import com.pokemongo.ivgocalculator.R;
 import com.pokemongo.ivgocalculator.ScreenGrabber;
 import com.pokemongo.ivgocalculator.updater.AppUpdate;
 import com.pokemongo.ivgocalculator.updater.AppUpdateUtil;
+import com.pokemongo.ivgocalculator.utils.sub.GoogleBillingHelper;
 import com.pokemongo.ivgocalculator.widgets.behaviors.DisableableAppBarLayoutBehavior;
 import com.umeng.analytics.MobclickAgent;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -62,7 +70,7 @@ import timber.log.Timber;
 
 import static android.content.Intent.FLAG_ACTIVITY_SINGLE_TOP;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final String TAG_FRAGMENT_CONTENT = "content";
@@ -181,6 +189,10 @@ public class MainActivity extends AppCompatActivity {
                 new IntentFilter(ACTION_RESTART_POKEFLY));
 
         runActionOnIntent(getIntent());
+
+        GoogleBillingHelper.getInstance().setSubActivity(this);
+
+        showDialog();
     }
 
     private boolean showSection(final @IdRes int sectionId) {
@@ -637,7 +649,55 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    private Dialog dialog;
+    private void showDialog(){
+        dialog= new Dialog(this, R.style.dialog);
+        View view = View.inflate(this, R.layout.dialogunlock, null);
+        view.findViewById(R.id.tv_sub1).setOnClickListener(this);
+        view.findViewById(R.id.tv_sub2).setOnClickListener(this);
+        view.findViewById(R.id.tv_sub3).setOnClickListener(this);
+        view.findViewById(R.id.tv_sub4).setOnClickListener(this);
 
 
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(view);
+        Window window = dialog.getWindow();
+        WindowManager.LayoutParams lp = window.getAttributes();
+        window.setGravity(Gravity.BOTTOM);
+        lp.width = LinearLayout.LayoutParams.FILL_PARENT;
+        lp.height = LinearLayout.LayoutParams.WRAP_CONTENT;
+        window.setAttributes(lp);
+        dialog.getWindow().setGravity(Gravity.CENTER);
+        dialog.setCancelable(false);
+        //点击dialog之外的区域禁止取消dialog
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.show();
 
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.tv_sub1:
+                GoogleBillingHelper.getInstance().startSub("ivgocalc_subscription01_1month");
+//                GoogleBillingHelper.getInstance().startSub("android.test.purchased");
+               break;
+        }
+
+    }
+
+    @Subscribe
+    public void onSubEvent(GoogleBillingHelper.PayModel eventModel) {
+        if (eventModel == null) {
+            return;
+
+        }
+        if (eventModel.code == GoogleBillingHelper.Event.HAVE_SUB) {
+            if (dialog != null) {
+                dialog.dismiss();
+            }
+
+        }
+    }
 }

@@ -9,4 +9,9 @@
     <color name="colorButtonDark">#27CDAB</color>
     <color name="colorButtonLight">#A0DB95</color>
     <color name="transparentWhite">#00FFFFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="color_6EA0EE">#6EA0EE</color>
+    <color name="transparent">#00000000</color>
+
 </resources>

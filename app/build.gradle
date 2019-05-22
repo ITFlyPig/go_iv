@@ -84,8 +84,8 @@ android {
     defaultConfig {
         minSdkVersion 19 /*Dont change this unless you know why*/
         targetSdkVersion 27 /*Dont change this unless you know why*/
-        versionCode 6
-        versionName "1.5"
+        versionCode 7
+        versionName "1.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -151,6 +151,11 @@ android {
             outputFileName = "GoIV-${variant.name}.${variant.versionName}.apk"
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
 /**
@@ -219,6 +224,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services:11.0.1'
     //EventBus
     implementation 'org.greenrobot:eventbus:3.0.0'
+
+    implementation 'com.android.support:multidex:1.0.1'
 }
 
 /**

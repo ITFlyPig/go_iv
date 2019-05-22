@@ -15,4 +15,8 @@
 2.設置訓練師等級並選擇隊伍.\n
 3.許可を承認します. \n
 4.開始を押し.</string>
+
+
+    <string name="title">個体値計算機PROに更新</string>
+    <string name="tip">オフライン&amp;高速&amp;正確</string>
 </resources>

@@ -331,4 +331,14 @@ Starting IV GO Calc for the first time: \n
     <string name="umeng_key">5bfd2550f1f556797400018e</string>
 
     <string name="app_name">IV Go Calc</string>
+
+    <string name="title">Update to IV Calc PRO</string>
+    <string name="tip">Offline&amp;Fast&amp;Accurate</string>
+    <string name="unity">Free Trial 7 Days</string>
+    <string name="des">Q: Why Google Play ID needs to add payment method for free trial?\n
+        \n
+        A: In fact free trial is a in-app purchase,but it only pay for $0！(Pay $0=Free Trial) in Android programming language.So that application identifies you get a free trial period. Since it is so,you need add a payment method.</string>
+    <string name="sub_str1">Trial 14 days for $1.99</string>
+    <string name="sub_str2">Trial 1 month for $3.99</string>
+    <string name="sub_str3">Trial 3 months for $11.99</string>
 </resources>
