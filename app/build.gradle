@@ -130,6 +130,7 @@ android {
                     'proguard-okhttp3.pro'
             lintOptions {
                 disable 'MissingTranslation'
+                ignoreWarnings true
             }
             productFlavors.offline.signingConfig signingConfigs.releaseConfig
 //            productFlavors.online.signingConfig signingConfigs.releaseConfig

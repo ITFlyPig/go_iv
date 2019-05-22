@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="unity">7 dias de avaliação gratuita</string>
+
+    <string name="sub_str1">14 dias de avaliação R$7.49</string>
+    <string name="sub_str2">1 mês de avaliação R$14.99</string>
+    <string name="sub_str3">3 mês de avaliação R$44.99</string>
+
+</resources>

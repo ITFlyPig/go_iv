@@ -304,4 +304,5 @@
     <string name="manual_calibration_param1">Parámetro1</string>
     <string name="manual_calibration_param2">Parámetro2</string>
     <string name="manual_calibration_save_exit">"Guardar y salir"</string>
+    <string name="unity">7 días de prueba gratuito</string>
 </resources>

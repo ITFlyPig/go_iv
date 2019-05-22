@@ -15,18 +15,22 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
-
--keep class com.kamron.pogoiv.** { *; }
-
--dontwarn java.awt.geom.**
-
+#
+#-keep class com.kamron.pogoiv.** { *; }
+#
+#-dontwarn java.awt.geom.**
+#
 -keepattributes *Annotation*
 -keepclassmembers class * {
     @org.greenrobot.eventbus.Subscribe <methods>;
 }
 -keep enum org.greenrobot.eventbus.ThreadMode { *; }
 
-# Only required if you use AsyncExecutor
--keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
-    <init>(java.lang.Throwable);
-}
+## Only required if you use AsyncExecutor
+#-keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
+#    <init>(java.lang.Throwable);
+#}
+
+-dontwarn org.checkerframework.checker.**
+-dontwarn afu.org.checkerframework.checker.**
+-dontwarn org.apache.commons.**
